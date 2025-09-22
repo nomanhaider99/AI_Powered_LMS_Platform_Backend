@@ -15,7 +15,7 @@ export const SuccessResponse = (
     response: Response,
     data: unknown
 ) => {
-    return response.json(
+    return response.setHeader('Access-Control-Allow-Origin', ['http://localhost:3000']).json(
         {
             statusCode,
             message,
