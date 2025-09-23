@@ -2,7 +2,6 @@ import { NextFunction, Request, Response } from "express";
 import { ErrorResponse, SuccessResponse } from "../utils/response";
 import { StatusCode } from '../utils/codes';
 import { sendEmail } from "../utils/email";
-import { envs } from "../config/envs";
 
 export const contactEmail = async (
     request: Request,

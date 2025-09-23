@@ -1,5 +1,5 @@
 import { NextFunction, Response } from "express";
-import createHttpError, { CreateHttpError } from "http-errors";
+import createHttpError from "http-errors";
 
 export const ErrorResponse = (
     statusCode: number,
