@@ -1,4 +1,3 @@
-// models/User.ts
 import mongoose, { Schema } from "mongoose";
 import { IWorkflowType } from "./workflow.models";
 
