@@ -11,5 +11,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 (0, database_1.connectMongoDB)();
+app.get('/', (_req, res) => {
+    return res.json({ ok: true, msg: 'Backend is working' });
+});
 app.use('/api', email_1.default);
 exports.default = app;
