@@ -9,6 +9,11 @@ app.use(cors());
 
 connectMongoDB();
 
+app.get('/', (_req, res) => {
+  return res.json({ ok: true, msg: 'Backend is working' });
+});
+
+
 app.use('/api', contactEmailRoute);
 
 export default app;
